@@ -1,6 +1,13 @@
 import logo from './logo.svg'
 import './App.css'
 import AppRouter from './AppRouter'
+import Game from './Game'
+
+let val = 0
+// window.setInterval(() => {
+//   val += 1
+//   console.log('---val: ', val)
+// }, 2000)
 
 function App() {
   return (
@@ -49,7 +56,8 @@ function App() {
           </a>
         </span>
       </header>
-      <AppRouter />
+      <Game val={val} />
+      {/* <AppRouter /> */}
     </div>
   )
 }

@@ -14,12 +14,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "noImplicitAny": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
       "~utils/*": ["src/utils/*"],
       "~hooks/*": ["src/hooks/*"],
-      "~features/*": ["src/features/topic/*", "src/features/counter/*"]
+      "~features/*": ["src/features/topic/*", "src/features/counter/*"],
+      "~imgs/*": ["src/assets/imgs/*"]
     }
   },
   "include": ["src"]
